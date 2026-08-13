@@ -188,7 +188,7 @@ export function Dashboard({ user }: { user: AuthUser }) {
     setActiveToolId(toolId);
     setMobileNavOpen(false);
     if (href && href.startsWith("#")) {
-      window.location.hash = href;
+      router.push(href);
     }
   }
 
